@@ -1,6 +1,48 @@
 @import './comp/ImageSlider.scss';
 @import './comp/modal.scss';
 
+@mixin bp-laptop-l {
+	@media (max-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin bp-laptop-m {
+	@media (max-width: 1365px) {
+		@content;
+	}
+}
+
+@mixin bp-laptop {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin bp-tablet {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin bp-mobile-l {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
+
+@mixin bp-mobile {
+	@media (max-width: 375px) {
+		@content;
+	}
+}
+
+@mixin bp-mobile-s {
+	@media (max-width: 320px) {
+		@content;
+	}
+}
+
 .App {
     display: flex;
     justify-content: center;

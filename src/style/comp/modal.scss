@@ -9,9 +9,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 30%;
     height: auto;
     z-index: 10;
+    font-size: 4rem;
 }
 .overlay {
     position: fixed;
@@ -19,6 +21,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background: rgba(0,0,0,0.5);
+    opacity: 0.5;
     z-index: 10;
+}
+
+.modal-close-btn {
+    margin-top: 2rem;
+    font-size: 3rem;
+    padding: 5%;
 }
