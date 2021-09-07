@@ -1,3 +1,6 @@
-.test {
-    color: red
+@import './comp/ImageSlider.scss';
+
+.App {
+    display: flex;
+    justify-content: center;
 }
