@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from 'react-icons/io';
+import Modal from './Modal';
 
 
 export default function ImageSlider({ silderData }) {
     const [current, setCurrent] = useState(0);
+    const [openModal, setOpenModal] = useState(false);
     const len = silderData.length;
 
     if(len <= 0) {
@@ -29,15 +31,15 @@ export default function ImageSlider({ silderData }) {
             <section className="slider">
                 <IoMdArrowDropleftCircle className='left-arrow' onClick={prevSlide}/>
                 <IoMdArrowDroprightCircle className="right-arrow" onClick={nextSlide}/>
-    
 
                 {silderData.map((data, idx) => {
                     let path = 'images/slider-assets/' + data.image
                     return (
                         <div className={idx === current ? "slide active" : "slide"} key={idx}>
                             {idx === current && (
-                                <img 
-                                src={path} 
+                                <img
+                                onClick={() => setOpenModal(true)}
+                                src={path}
                                 alt={data.alt}
                                 className="image"
                                 />
@@ -45,6 +47,10 @@ export default function ImageSlider({ silderData }) {
                         </div>
                     ) 
                 })}
+                <Modal open={openModal} onClose={() => setOpenModal(false)}>
+                    test
+                </Modal>
+
                 <div className='container-dots'>
                     {Array.from({length: len}).map((dot, idx) => (
                         <div 
