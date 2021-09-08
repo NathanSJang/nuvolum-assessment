@@ -38,7 +38,6 @@ export default function ImageSlider({ silderData }) {
             <section className="slider">
                 <IoMdArrowDropleftCircle className='left-arrow' onClick={prevSlide}/>
                 <IoMdArrowDroprightCircle className="right-arrow" onClick={nextSlide}/>
-                
                 <div 
                     className="inner"
                     style={{ transform: `translateX(-${current * 100}%)` }}
@@ -54,9 +53,9 @@ export default function ImageSlider({ silderData }) {
                         /> 
                     ) 
                 })}
+                </div>
                 <Modal open={openModal} onClose={() => setOpenModal(false)} data={imgData}>
                 </Modal>
-                </div>
 
                 <div className='container-dots'>
                     {Array.from({length: len}).map((dot, idx) => (

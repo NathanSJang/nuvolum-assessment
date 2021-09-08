@@ -44,6 +44,39 @@
 }
 
 .App {
+    text-align: center;
+    height: 100vh;
+    padding: 2%;
+    @media (max-width: 425px) {
+        padding: 5%;
+    }
+}
+h1 {
+    font-size: 4rem;
+    @media (max-width: 425px) {
+        font-size: 2rem;
+    }
+}
+
+p {
+    font-size: 1.8rem;
+    @media (max-width: 425px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 375px) {
+        font-size: 1.2rem;
+    }
+}
+
+.app-sub-title {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app-context {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

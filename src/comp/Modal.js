@@ -7,7 +7,7 @@ export default function Modal({ open, onClose, data }) {
         <>
             <div className="overlay" />
             <div className="modal">
-                {data[0].alt}
+                <h6>{data[0].alt}</h6>
                 <button className='modal-close-btn' onClick={onClose}>Close</button>
             </div>
         </>
