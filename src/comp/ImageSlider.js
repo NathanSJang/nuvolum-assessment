@@ -32,7 +32,6 @@ export default function ImageSlider({ silderData }) {
         setCurrent(idx);
     }
 
-
     return (
         <div className="slider-container">
             <section className="slider">
@@ -54,8 +53,7 @@ export default function ImageSlider({ silderData }) {
                     ) 
                 })}
                 </div>
-                <Modal open={openModal} onClose={() => setOpenModal(false)} data={imgData}>
-                </Modal>
+                <Modal open={openModal} onClose={() => setOpenModal(false)} data={imgData} />
 
                 <div className='container-dots'>
                     {Array.from({length: len}).map((dot, idx) => (
