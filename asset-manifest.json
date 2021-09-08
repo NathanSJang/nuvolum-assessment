@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nuvolum-assessment/static/css/main.2832dea0.chunk.css",
+    "main.js": "/nuvolum-assessment/static/js/main.3756452b.chunk.js",
+    "main.js.map": "/nuvolum-assessment/static/js/main.3756452b.chunk.js.map",
+    "runtime-main.js": "/nuvolum-assessment/static/js/runtime-main.8789880d.js",
+    "runtime-main.js.map": "/nuvolum-assessment/static/js/runtime-main.8789880d.js.map",
+    "static/js/2.4b41b132.chunk.js": "/nuvolum-assessment/static/js/2.4b41b132.chunk.js",
+    "static/js/2.4b41b132.chunk.js.map": "/nuvolum-assessment/static/js/2.4b41b132.chunk.js.map",
+    "static/js/3.6e860834.chunk.js": "/nuvolum-assessment/static/js/3.6e860834.chunk.js",
+    "static/js/3.6e860834.chunk.js.map": "/nuvolum-assessment/static/js/3.6e860834.chunk.js.map",
+    "index.html": "/nuvolum-assessment/index.html",
+    "static/css/main.2832dea0.chunk.css.map": "/nuvolum-assessment/static/css/main.2832dea0.chunk.css.map",
+    "static/js/2.4b41b132.chunk.js.LICENSE.txt": "/nuvolum-assessment/static/js/2.4b41b132.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8789880d.js",
+    "static/js/2.4b41b132.chunk.js",
+    "static/css/main.2832dea0.chunk.css",
+    "static/js/main.3756452b.chunk.js"
+  ]
+}
